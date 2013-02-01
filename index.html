@@ -1,0 +1,184 @@
+﻿<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/valtech.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+    <section>
+        <h1>FitNesse</h1>
+        <p>REX SITA</p>
+    </section>
+	<section>
+         <h2>Introduction</h2>
+		 </br>
+	</section>
+	<section>
+         <h2>Objectifs</h2>
+		 </br>
+	</section>
+
+	<section>
+        <section>
+         <h2>La Théorie</h2>
+		 ATDD
+		 </br>
+	    </section>
+        <section>
+         <h2>La Théorie</h2>
+		 Spécifications exécutables
+		 </br>
+	    </section>
+        <section>
+         <h2>La Théorie</h2>
+		 Le rôle de l'analyste
+		 </br>
+	    </section>
+	</section>
+    <section>
+        <section>
+            <h2>FitNesse en bref</h2>
+			<ul>
+				<li><p class="fragment roll-in">Outil de développement d'application collaboratif</p></li>
+				<li><p class="fragment roll-in">Outil de test d'application</p></li>
+				<li><p class="fragment roll-in">Un Wiki</p></li>
+				<li><p class="fragment roll-in">Un serveur web</p></li>
+			</ul>
+			
+        </section>
+        <section>
+            <h2>FitNesse : des tableaux</h2>
+        </section>
+		<section>
+            <h2>FitNesse : des fixtures</h2>
+        </section>
+    </section>
+
+    <section>
+        <section>
+            <h2>Notre personalisation</h2>
+			Problème : communiquer entre les tableaux.
+        </section>
+		<section>
+            <h2>Des variables au PageContext</h2>
+        </section>
+        <section>
+            <h2>La Généralisation des IlExiste, ListeDe, Selection</h2>
+        </section>
+    </section>
+	
+    <section>
+            <h2>Kata</h2>
+    </section>
+	
+	
+    <section>
+        <section>
+            <h2>Le Gain de l'analyste testeur</h2>
+			Communication</br>
+			Réutilisation</br> 
+			Normalisation du langage</br>
+			Qualité depuis le début</br>	
+			Vérification des cas métier simple
+        </section>
+		<section>
+            <h2>Le Gain du Développeur</h2>
+			Exigences claires</br>
+			Tests automatisés</br>
+			Prise en main du code</br>
+			Transfert du code</br>
+        </section>
+		<section>
+            <h2>Le Gain du PO/Scrum Master</h2>
+			Les specs sont lues</br>
+			Aucune partie de la spec oubliée</br>
+			Bonne compréhension des specs</br>
+			Gain de temps sur les tests d'acceptance</br>
+        </section>
+    </section>
+	
+	
+    <section>
+        <h2>SITA : G2FM</h2>
+		mvn install Packages pour creer le classpath dans fitnesse</br>
+		maven : pb de dépendances : Maintenir le pom.xml de fitnesse</br>
+		Sonar : Couverture à 84 % avec 61 Tests U</br>
+		L'arborescente de liens "non regression", La page "Qualité Non-Régression"</br>
+		Exemple de Fixture Avancée : SecuriteService</br>
+		DownloadPDF
+    </section>
+	
+	<section>
+        <h2>Conclusion</h2>
+		Couverture
+		Confort de développement 
+    </section>
+	
+	<section>
+        <h1> ?</h1>
+			
+    </section>
+	</div>
+	</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
