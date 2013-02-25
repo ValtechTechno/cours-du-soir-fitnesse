@@ -1,0 +1,1 @@
+ajouter un screenshot de query:liste des fournisseurs pour expliquer pour chaque tableau, la fixture est une classe
