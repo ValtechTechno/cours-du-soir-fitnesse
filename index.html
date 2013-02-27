@@ -41,17 +41,17 @@
 		<BR/>
 		<BR/>
 		<BR/>
-		<p>Maëlle Dogue et Etienne Charignon</p>
+		<p>Maëlle Dogué et Etienne Charignon</p>
 		<img src="http://www.valtech.fr/sites/all/themes/valtech/logo.png">
     </section>
 	<section>
          <h2>Introduction</h2>
-<div style="text-align: left;">Nous vous présenterons rapidement <ul><li>les concepts du développement pilotés par les tests fonctionnels (ATTD : acceptance tests driven development) </li><li>l'outil Fitnesse, que nous avons mis en place.</li></ul>
-	<BR/><BR/>Nous vous montrerons du <B>vrai</B>, <br>nos documents d'acceptations et la mécanique qui est derrière.</div>
+<div style="text-align: left;">Nous vous présenterons rapidement <ul><li>les concepts du développement piloté par les tests fonctionnels (ATTD : acceptance tests driven development) </li><li>l'outil FitNesse, que nous avons mis en place.</li></ul>
+	<BR/><BR/>Nous vous montrerons du <B>vrai</B>, <br>nos documents d'acceptation et la mécanique qui est derrière.</div>
 	</section>
 	<section>
          <h2>Objectifs</h2>
-		 <p>Quel sont vos objectifs pour cette soirée ?</p>
+		 <p>Quels sont vos objectifs pour cette soirée ?</p>
 		 </br>
 	</section>
 
@@ -93,9 +93,19 @@
         <section>
          <h2>La Théorie</h2>
 		 <div style="font-size:140%"><p>Les tests fonctionnels ?</p><BR>
-		 <p>Ce sont les tests de <b>toutes</b> l'équipe</p><BR>
+		 <p>Ce sont les tests de <b>toute</b> l'équipe</p><BR>
 		 </div>
 		 <blockquote>Il n'y a pas d'une part les tests développeur et d'autre part les tests client</blockquote>
+	    </section>
+        <section>
+         <h2><b>Ma</b> Théorie</h2>
+		 <blockquote><p>FitNesse c'est beaucoup mieux que jUnit</p></blockquote><BR/>
+		 Combien de tests jUnit sont en fait des tests fontionnels ? Beaucoup le sont et ce sont les meilleurs<BR/>
+		 <br/>
+		 FitNesse permet de séparer les données de tests du moteur d'exécution des tests<BR/>
+		 <BR/>
+		 jUnit est propice à la sur-conception<br/>
+		 jUnit rigidifie l'architecture (mais par ailleurs favorise le découplage, il est vrai)
 	    </section>
 	</section>
     <section>
@@ -110,7 +120,7 @@
         </section>
         <section>
             <h2>FitNesse : des tableaux</h2>
-			<P>Dans FitNesse tout est dans des tableaux.<BR/><BR/>Par opposition, un certain nombre de framworks plutôt dit "BDD" se sont construits par dessus Gherkin et utilisent un DSL</P><br>
+			<P>Dans FitNesse tout est dans des tableaux.<BR/><BR/>Par opposition, un certain nombre de framworks plutôt dits "BDD" se sont construits par dessus Gherkin et utilisent un DSL</P><br>
 			<p class="fragment roll-in">Dans un document de présentation de BDD d'un de nos cours du soir récent (très bon document)<a href="http://valtechtechno.github.com/cours-du-soir-bdd/index.html#/52">Behaviour Driven Development, slide 52</a></p>
         </section>
         <section>
@@ -126,15 +136,15 @@
         </section>
 		<section>
             <h2>FitNesse : des fixtures</h2>
-			<img src="fixtureEtageres.jpeg" style=" width:50%; height: auto;">
+			<img src="fixtureEtageres.jpeg" style=" width:50%; height: auto;"/>
         </section>
 		<section>
             <h2>FitNesse : des fixtures</h2>
-			<img src="queryListeFournisseur.png" >
+			<img src="queryListeFournisseur.png" />
         </section>
 		<section>
             <h2>FitNesse : des fixtures</h2>
-			<img src="queryListeFournisseur_classe.png" >
+			<img src="queryListeFournisseur_classe.png" />
         </section>
 		
     </section>
@@ -143,17 +153,20 @@
         <section>
             <h2>Notre personalisation</h2>
 			Problème : communiquer entre les tableaux.
-			<img src="détailFournisseur.png">
+			<img src="détailFournisseur.png"/>
         </section>
 		<section>
             <h2>Des variables au PageContext</h2>
-			Sur Fitnesse.org ?<br> on vous conseil d'utiliser des variables statics.<br>
+			Sur FitNesse.org ?<br> on vous conseille d'utiliser des variables statiques.<br>
 			<a href="http://localhost:9090/FitNesse.UserGuide.FixtureCode">Comment écrire le code des fixtures :<br>"What That Call To StaticGame Is For"</a>
 			<br><br>
-			Nous avons introduit le PageContext :<br>une map réinitialisée à chaque page
+			Nous avons introduit le PageContext :<br>
+			une map réinitialisée à chaque page<br>
+			<img src="PageContext.png"/>
         </section>
         <section>
             <h2>La Généralisation des IlExiste, ListeDe, Selection</h2>
+			<img src = "ConsulterLaListeDesFournisseurs.png"/>
         </section>
     </section>
 	
@@ -192,7 +205,7 @@
 		</section>
 		<section>
 		        <h2>La démo</h2>
-				<img src="le fonctionnel.jpeg">
+				<img src="le fonctionnel.jpeg"/>
 	    </section>
         <section>
          <h2>Les types de tests</h2>
@@ -203,9 +216,10 @@
 			<div style="text-align: left;">
 			<ul>
 			<li>maven : pb de dépendances : Maintenir le pom.xml de fitnesse</br></li>
-			<li>L'arborescente de liens "non regression", La page "Qualité Non-Régression"</br></li>
+			<li>L'arborescence de liens "non regression", La page "Qualité Non-Régression"</br></li>
 			<li>Exemple de Fixture Avancée : SecuriteService</br></li>
 			<li>DownloadPDF</li>
+			<li>Temps d'exécution : un peu plus de 2 minutes</li>
 			</ul>
 			<div>
 	    </section>
@@ -213,8 +227,9 @@
 		
 	<section>
         <h2>Conclusion</h2>
-		Couverture
-		Confort de développement 
+		Couverture<br>
+		Confort de développement<br>
+		<img src="smiley.jpeg"/>
     </section>
 	
 	<section>
